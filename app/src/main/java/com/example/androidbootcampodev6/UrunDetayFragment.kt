@@ -29,7 +29,8 @@ class UrunDetayFragment : Fragment() {
 
         binding.textViewUrunAciklama.text = urun.hakkinda
         binding.textViewFiyat.text = "${urun.fiyat}₺"
-
+        binding.textViewMarka.text = "${urun.urunAdi}₺"
+        binding.textViewUrunAdi.text = "${urun.urunAdi}₺"
 
         binding.buttonSepeteEkle.setOnClickListener {
             Snackbar.make(it, "${urun.urunAdi} sepete eklendi!", Snackbar.LENGTH_SHORT).show()

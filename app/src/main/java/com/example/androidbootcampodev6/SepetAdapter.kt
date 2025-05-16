@@ -22,11 +22,8 @@ class SepetAdapter(var mContext: Context, var sepetListesi: ArrayList<Urunler>) 
 
     override fun onBindViewHolder(holder: CardSepetTasarimTutucu, position: Int) {
         val urun = sepetListesi.first()
-""
-        Log.e("urun","${urun.urunAdi}")
-        //Toast.makeText(requireContext(), urun.urunAdi, Toast.LENGTH_SHORT).show()
         val t = holder.tasarim
-//
+
         t.imageViewUrun.setImageResource(
             mContext.resources.getIdentifier(urun.resim, "drawable", mContext.packageName)
         )
